@@ -202,3 +202,17 @@
         </plugins>
     </build>
 </project>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Note: 
+
+mvn install:install-file -Dfile="Z:\file\.....\app.jar" -DgroupId=com.oracle -DartifactId=oracle7 -Dversion=12.1.0 -Dpackaging=jar -DcreateChecksum=true
+
+Then Add
+
+<dependency>
+         <groupId>com.oracle</groupId>
+         <artifactId>oracle7</artifactId>
+         <version>12.1.0</version>
+</dependency>
